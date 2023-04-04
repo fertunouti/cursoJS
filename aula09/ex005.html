@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - entendendo DOM</title>
+    <style>
+        body {
+            background: rgb(137, 203, 137);
+            font: normal 18pt Arial;
+            color: white
+        }
+    </style>
+
+</head>
+
+<!  AULA DE MANIPULAÇÃO DO DOM
+<!   DOM = ÁRVORE QUE ESTRUTURA A PÁGINA html
+
+
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong> DOM </strong> em JavaScript</p>
+    <div id="msg">Clique aqui</div>
+    <script>
+        // Nomeia como  p1 elemento  tag <p> com posição 1  
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        // Escreve na pagina "Está escrito : Aprendendo.."
+        window.document.write('Está escrito: '+ p1.innerText)
+
+        // muda a cor do parágrafo <p>[1]
+        p1.style.color = 'blue'
+
+        //manipula o elemento <div> com nome msg
+        var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        d.innerText = 'Estou aguardando...'
+
+        //acessando elementos CSS (usa # para id e . para class)
+        var e = window.document.querySelector('div#msg')
+        e.style.background = 'blue'
+      
+
+    </script>
+
+</body>
+
+</html>
