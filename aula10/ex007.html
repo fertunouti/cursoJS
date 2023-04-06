@@ -9,10 +9,13 @@
     body {
         
     background: linear-gradient(rgb(55, 0, 128), rgb(0, 9, 139));
-    font : normal 15pt Arial;
+    font : normal 15pt Roboto;
     color: white
         }
-    
+    .botao{
+        background: yellow;
+        font : bold 15pt Arial;
+    }
     
     input {
         font : normal 15pt Arial;
@@ -22,6 +25,7 @@
     	border: none;
     	margin-bottom: 10px;
     	border-radius: 50px;
+        text-align: center;
     }
 </Style>
 
@@ -31,8 +35,8 @@
 <h1>Valores</h1>
 <input type="number" name="num1" id="num1"> + 
 <input type="number" name="num2" id="num2">
-<input type="button" value="Soma" onclick="somar()">
-<div id="res">  R </div> 
+<input type="button" class = "botao" value="Soma" onclick="somar()">
+<div id="res">  Resultado </div> 
 
 <script>
 function somar(){

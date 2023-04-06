@@ -1,0 +1,4 @@
+
+function dizOla(){
+    alert("Olá!")
+}

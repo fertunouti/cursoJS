@@ -1,0 +1,35 @@
+body {
+    background: rgb(162, 130, 192);
+    color: white;
+    font: normal 18pt Roboto;
+    text-align: center;
+
+}
+
+section {
+    background: #ccc;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 5%;
+
+
+}
+
+button{
+    background: #ccc;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 5%;
+}
+
+div {
+    padding: 5%;
+}
+
+footer {
+
+    font: italic 10pt TimesNewRoman;
+    color: darkblue;
+}
