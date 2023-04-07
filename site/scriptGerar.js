@@ -101,18 +101,7 @@ function submitForm() {
     
 }
 
-const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-const countDisplay = document.querySelector('#count');
 
-let count = 0;
-    checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', e => {
-       if (e.target.checked) {
-            count += 1;
-           } else {
-             count -= 1;
-               }
-    countDisplay.textContent = count;
-    }   );
- });
+
+
 
